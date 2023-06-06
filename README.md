@@ -19,7 +19,7 @@
         MODELS_KEY="" # Machine learning access key for getting predictions (Might not required for Local ML Server)
         MODELS_URL="" # Machine learning endpoints for getting predictions
 
-        PREDICT_CLASSES='{"Angulation": false, "Depth": false, "Ramus_Relationship": false, "Difficulty": true}' # String of object indicates considered criterior
+        PREDICT_CLASSES='{"Angulation": false, "Depth": false, "Ramus_Relationship": false, "Difficulty": true}' # String of object indicates considered criteria
         SECRET_KEY="" # secret key for jwt token signature
         TOKEN_EXP_TIME=9000 # jwt token lifespan
     ```
@@ -29,7 +29,7 @@
 
 
 ## **Run** (local)
-Excecute following command to run DentifyX backend in local
+Execute following command to run DentifyX backend in local
 ```
     python app.py
 ```
@@ -49,7 +49,7 @@ There are 2 ways to create ML server for backend
 ### **Local Machine Learning Server Setup**
 1. Create a server using `flask` (Can use this project as a reference) or any preferred frameworks
 2. Implement API for obtain model predictions
-    > NOTE: Please refer to `MLEntryScript` to see how model was inferenced and how each API handle the request and response data
+    > NOTE: Please refer to `MLEntryScript` to see how models were inference and how each API handle the request and response data
 3. Change following environment variables in `.env` file ([Build section](#build-local) step 2):
     ```Dotenv
        MODELS_KEY="<your-local-ml-key>" # if have no key, leave it as an empty string
